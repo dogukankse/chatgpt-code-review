@@ -32,7 +32,9 @@ class RepoForm:
             env_api_key,
             placeholder="Paste your API key here",
         )
-        openai.api_key = self.api_key
+
+        openai.api_base = "http://localhost:1234/v1" # point to the local server
+        openai.api_key = ""
 
         self.extensions = st.multiselect(
             "File extensions to analyze",
@@ -58,9 +60,6 @@ class RepoForm:
 
     def is_api_key_valid(self):
         """Checks if the OpenAI API key is valid and returns a boolean value."""
-        if not self.api_key:
-            st.error("Please enter your OpenAI API key.")
-            return False
         return True
 
 
