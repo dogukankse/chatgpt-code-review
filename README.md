@@ -46,7 +46,7 @@ Here's how to install and use ChatGPT Code Review on your local machine:
 1. **Clone the repository**: Execute this on your local machine and navigate to the project directory:
 
    ```bash
-   git clone https://github.com/domvwt/chatgpt-code-review.git
+   git clone https://github.com/dogukankse/chatgpt-code-review
    cd chatgpt-code-review
    ```
 
